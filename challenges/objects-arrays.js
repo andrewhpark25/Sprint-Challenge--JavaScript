@@ -180,3 +180,16 @@ console.log(populationTotal);
 /*
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 */
+
+
+
+const lowCaseAnimalNames2 = zooAnimals.map((animal) =>  {
+  return animal.animal_name.toLowerCase();
+})
+
+console.log(lowCaseAnimalNames2);
+
+const lowPopulationAnimals2 = zooAnimals.filter((animal) => {
+  return animal.population < 5;
+})
+console.log(lowPopulationAnimals2);
